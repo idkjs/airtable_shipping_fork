@@ -1,0 +1,27 @@
+# i use this for a previous version of  a generated schema
+*.prev
+
+#airtable
+/.airtableblocksrc.json
+/build
+
+
+# from https://github.com/reasonml/reason-react/blob/master/.gitignore
+.DS_Store
+/node_modules*
+finalOutput/*.js
+.merlin
+.install
+/lib/bs/
+/lib/js/
+/lib/ocaml/
+*.log
+.bsb.lock
+/src/*.js
+_esy
+_build
+*.install
+*.bs.js
+
+# Editor
+/.idea/
