@@ -4,7 +4,7 @@ UI INTEGRATION
 UI INTEGRATION
 */
 module Input = {
-  @bs.module("@airtable/blocks/ui") @react.component
+  @module("@airtable/blocks/ui") @react.component
   external make: (
     ~value: string,
     ~onChange: ReactEvent.Form.t => 'a,
@@ -13,7 +13,7 @@ module Input = {
 }
 
 module Dialog = {
-  @bs.module("@airtable/blocks/ui") @react.component
+  @module("@airtable/blocks/ui") @react.component
   external make: (
     ~onClose: unit => 'a,
     ~children: React.element,
@@ -27,17 +27,17 @@ module Dialog = {
 
 /*
 module JoCoDialog = {
-  @bs.module("./AirtableUI_helpers") @react.component
+  @module("./AirtableUI_helpers") @react.component
   external make: (~onClose: unit => 'a, ~children: React.element) => React.element = "JoCoDialog"
 }*/
 
 module DialogCloseButton = {
-  @bs.module("./AirtableUI_helpers") @react.component
+  @module("./AirtableUI_helpers") @react.component
   external make: unit => React.element = "DialogCloseButton"
 }
 
 module Heading = {
-  @bs.module("@airtable/blocks/ui") @react.component
+  @module("@airtable/blocks/ui") @react.component
   external make: (
     ~style: ReactDOM.Style.t=?,
     ~size: string=?,
@@ -46,7 +46,7 @@ module Heading = {
 }
 
 module Button = {
-  @bs.module("@airtable/blocks/ui") @react.component
+  @module("@airtable/blocks/ui") @react.component
   external make: (
     ~children: React.element,
     ~icon: string,

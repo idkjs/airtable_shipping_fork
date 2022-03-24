@@ -1,4 +1,4 @@
-@bs.module("@airtable/blocks/ui")
+@module("@airtable/blocks/ui")
 external initializeBlock: (_ => React.element) => _ = "initializeBlock"
 
 initializeBlock(() => <App />)
